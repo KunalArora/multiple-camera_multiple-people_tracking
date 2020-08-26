@@ -1,0 +1,15 @@
+# Manequin problem
+python multi_camera_multi_person_tracking.py \
+	-i data/WalkByShop1front.mpg data/WalkByShop1cor.mpg \
+	-m model/intel/person-detection-retail-0013/FP32-INT8/person-detection-retail-0013.xml \
+	--m_reid model/intel/person-reidentification-retail-0031/FP32-INT8/person-reidentification-retail-0031.xml \
+	--config config.py
+
+# correctly working
+python multi_camera_multi_person_tracking.py \
+    -i data/HallWayTracking/videos/001.avi data/HallWayTracking/videos/002.avi data/HallWayTracking/videos/005.avi \
+    -m model/intel/person-detection-retail-0013/FP32-INT8/person-detection-retail-0013.xml \
+    --m_reid model/intel/person-reidentification-retail-0031/FP32-INT8/person-reidentification-retail-0031.xml \
+	--config config.py
+
+
