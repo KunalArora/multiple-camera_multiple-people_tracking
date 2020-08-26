@@ -1,3 +1,7 @@
 data/
 model/intel/instance-segmentation-security-0050
-*avi
+MOTS*
+multi-3-inside.avi
+multi-4-inside.avi
+output.avi
+Multi_terrace_output.avi
