@@ -1,0 +1,55 @@
+This folder contains multi-camera tracking dataset. Following is the folder structure:
+
+├── camera_placement.pdf
+├── homography
+│   ├── 001.txt
+│   ├── 002.txt
+│   ├── 003.txt
+│   ├── 004.txt
+│   ├── 005.txt
+│   └── Homography.mat
+└── videos
+    ├── 001.avi
+    ├── 002.avi
+    ├── 003.avi
+    ├── 004.avi
+    └── 005.avi
+
+All the videos are stored in videos folder and the corresponding ground plane homography files are stored in homography folder. Also, a .mat file (MATLAB)
+containing homographies is also provided. camera_placement.pdf shows the layout of the network. All the videos are completely synchronized using global timestamps while collecting the dataset.
+
+Here is the code snippet to project image plane locations onto the ground plane:
+
+gpTemp         = homoGraphy * imagePosition; // imagePosition = [ x y 1 ]'
+gpPosition	   = [gpTemp(1)/gpTemp(3); gpTemp(2)/gpTemp(3)]';
+
+
+Bibtex:
+
+@inproceedings{sunderrajan2013Multiple, 
+	author={Sunderrajan, S. and Manjunath, B.S.}, 
+	booktitle={Distributed Smart Cameras (ICDSC), 2013 Seventh International Conference on}, 
+	title={Multiple view discriminative appearance modeling with IMCMC for distributed tracking}, 
+	year={2013}, 
+	month={Oct}, 
+	pages={1-7},
+	doi={10.1109/ICDSC.2013.6778203}
+}
+
+@inproceedings{ni2010particle,
+  title={Particle filter tracking with online multiple instance learning},
+  author={Ni, Zefeng and Sunderrajan, Santhoshkumar and Rahimi, Amir and Manjunath, BS},
+  booktitle={Pattern Recognition (ICPR), 2010 20th International Conference on},
+  pages={2616--2619},
+  year={2010},
+  organization={IEEE}
+}
+
+@inproceedings{ni2010distributed,
+  title={Distributed particle filter tracking with online multiple instance learning in a camera sensor network},
+  author={Ni, Zefeng and Sunderrajan, Santhoshkumar and Rahimi, Amir and Manjunath, BS},
+  booktitle={Image Processing (ICIP), 2010 17th IEEE International Conference on},
+  pages={37--40},
+  year={2010},
+  organization={IEEE}
+}
