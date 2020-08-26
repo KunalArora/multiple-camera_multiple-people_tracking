@@ -2,6 +2,14 @@
 
 This demo demonstrates how to run Multi Camera Multi Person demo using OpenVINO<sup>TM</sup>.
 
+## Run the following command line after switching into the cloned directory 
+
+python multi_camera_multi_person_tracking.py \
+    -i datasets/HallWayTracking/videos/001.avi datasets/HallWayTracking/videos/002.avi datasets/HallWayTracking/videos/005.avi \
+    -m model/intel/person-detection-retail-0013/FP32-INT8/person-detection-retail-0013.xml \
+    --m_reid model/intel/person-reidentification-retail-0031/FP32-INT8/person-reidentification-retail-0031.xml \
+    --config config.py
+
 ## How It Works
 
 The demo expects the next models in the Intermediate Representation (IR) format:
@@ -105,6 +113,13 @@ python multi_camera_multi_person_tracking.py \
     --config config.py
 ```
 
+<!-- # videos with instance segmentation model
+python multi_camera_multi_person_tracking.py \
+    -i path/to/video_1.avi path/to/video_2.avi \
+    --m_segmentation path/to/instance-segmentation-security-0050.xml \
+    --m_reid path/to/person-reidentification-retail-0107.xml \
+    --config config.py
+ -->
 <!-- The demo can use a JSON file with detections instead of a person detector.
 The structure of this file should be as follows:
 ```json
