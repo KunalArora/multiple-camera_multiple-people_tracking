@@ -96,13 +96,6 @@ python multi_camera_multi_person_tracking.py \
     --m_detector path/to/person-detection-retail-0013.xml \
     --m_reid path/to/person-reidentification-retail-0103.xml \
     --config config.py
-<!-- 
-# videos with instance segmentation model
-python multi_camera_multi_person_tracking.py \
-    -i path/to/video_1.avi path/to/video_2.avi \
-    --m_segmentation path/to/instance-segmentation-security-0050.xml \
-    --m_reid path/to/person-reidentification-retail-0107.xml \
-    --config config.py -->
 
 # web-cameras
 python multi_camera_multi_person_tracking.py \
