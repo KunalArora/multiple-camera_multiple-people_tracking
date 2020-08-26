@@ -4,11 +4,14 @@ This demo demonstrates how to run Multi Camera Multi Person demo using OpenVINO<
 
 ## Run the following command line after switching into the cloned directory 
 
+```
 python multi_camera_multi_person_tracking.py \
     -i datasets/HallWayTracking/videos/001.avi datasets/HallWayTracking/videos/002.avi datasets/HallWayTracking/videos/005.avi \
     -m model/intel/person-detection-retail-0013/FP32-INT8/person-detection-retail-0013.xml \
     --m_reid model/intel/person-reidentification-retail-0031/FP32-INT8/person-reidentification-retail-0031.xml \
     --config config.py
+
+```
 
 ## How It Works
 
