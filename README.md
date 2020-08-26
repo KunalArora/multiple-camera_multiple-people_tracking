@@ -96,13 +96,13 @@ python multi_camera_multi_person_tracking.py \
     --m_detector path/to/person-detection-retail-0013.xml \
     --m_reid path/to/person-reidentification-retail-0103.xml \
     --config config.py
-
+<!-- 
 # videos with instance segmentation model
 python multi_camera_multi_person_tracking.py \
     -i path/to/video_1.avi path/to/video_2.avi \
     --m_segmentation path/to/instance-segmentation-security-0050.xml \
     --m_reid path/to/person-reidentification-retail-0107.xml \
-    --config config.py
+    --config config.py -->
 
 # web-cameras
 python multi_camera_multi_person_tracking.py \
@@ -112,7 +112,7 @@ python multi_camera_multi_person_tracking.py \
     --config config.py
 ```
 
-The demo can use a JSON file with detections instead of a person detector.
+<!-- The demo can use a JSON file with detections instead of a person detector.
 The structure of this file should be as follows:
 ```json
 [
@@ -147,7 +147,7 @@ The structure of this file should be as follows:
 ```
 Such file with detections can be saved from the demo. Specify the argument
 `--save_detections` with path to an output file.
-
+ -->
 ## Demo Output
 
 The demo displays bounding boxes of tracked objects and unique IDs of those objects.
