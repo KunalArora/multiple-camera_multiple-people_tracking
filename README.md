@@ -46,7 +46,6 @@ pip3 install -r requirements.txt
 ```
 Minimum command examples to run the demo:
 
-```
 # videos
 python multi_camera_multi_person_tracking.py \
     -i path/to/video_1.avi path/to/video_2.avi \
