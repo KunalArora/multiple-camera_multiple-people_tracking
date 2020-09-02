@@ -1,4 +1,4 @@
-# Multi Camera Multi Person Python Demo
+# Real-time Multi-people Tracking-by-detection in video surveillance Multiple-camera environment prototype
 
 This demo demonstrates how to run Multi Camera Multi Person demo using OpenVINO<sup>TM</sup>.
 
